@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anytime</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/particular.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="subheader">
+            <i class="fas fa-music"></i>
+            <span>Any</span>
+            <span>TIME!</span>
+        </div>
+    </div>
+    <div id="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="songs.html" class="active">Songs</a>
+    </div>
+
+
+    <div id="main">
+        <div class="songContainer">
+            <p class="pheader">Song: Symphony</p>
+            <p class="pheader">Artist: Zara Larsson</p>
+            <img src="images/symphony.jpg" alt="Symphony">
+            <button onclick="startMusic()">Play</button>
+        </div>
+
+        <div id="footer">
+            <audio controls style="width: 90%; outline: none;" id="audioplayer">
+                <source src="media/Music.mp3" type="audio/mp3">
+            </audio>
+            <i class="fas fa-times" onclick="closefooter()"></i>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function startMusic() {
+            let bottomSheet = document.getElementById("footer");
+            bottomSheet.style.bottom = "0px";
+            let audio = document.getElementById("audioplayer");
+            audio.play();
+        }
+
+        function closefooter() {
+            let bottomSheet = document.getElementById("footer");
+            bottomSheet.style.bottom = "-75px";
+            let audio = document.getElementById("audioplayer");
+            audio.pause();
+        }
+    </script>
+
+</body>
+
+</html>

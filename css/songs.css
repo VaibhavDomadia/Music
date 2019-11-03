@@ -1,0 +1,48 @@
+#main {
+    padding: 32px 64px;
+}
+
+.pheader {
+    color: #5f6368;
+    font-size: 30px;
+    margin: 40px 0px;
+}
+
+.slider {
+    display: grid;
+    overflow: auto;
+    grid-column-gap: 10px;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px auto;
+}
+
+.slider a {
+    opacity: 0.5;
+    width: 200px;
+    height: 200px;
+}
+
+.slider a:hover {
+    opacity: 1;
+}
+
+.slider img {
+    width: 100%;
+    height: 200px;
+}
+
+.imagecard {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.textaboveimage {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}

@@ -1,0 +1,41 @@
+#main {
+    padding: 32px;
+}
+
+.pHeader {
+    font-size: 36px;
+    color: #5f6368;
+}
+
+.half {
+    width: 50%;
+}
+
+.cardLayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 48px;
+}
+
+.card {
+    padding: 16px;
+    box-shadow: 8px 8px 8px rgba(238, 110, 115, 0.25);
+    transition: box-shadow 0.3s;
+    border-radius: 8px;
+    background-color: #ee6e73;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 4px rgba(238, 110, 115, 0.25);
+}
+
+.cardheader {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.carddescription {
+    color: white;
+    padding: 16px;
+}

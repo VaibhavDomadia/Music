@@ -1,0 +1,39 @@
+#main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 64px;
+}
+
+#main p:nth-child(1) {
+    font-size: 56px;
+    justify-self: center;
+    margin: 32px;
+    color: #444444;
+}
+
+#main p:nth-child(2) {
+    font-size: 36px;
+    color: #5f6368;
+    margin: 16px;
+}
+
+#main a {
+    color: white;
+    padding: 8px 32px;
+    align-self: center;
+    justify-self: center;
+    margin: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    border-radius: 24px;
+    margin: 16px;
+    box-shadow: 4px 4px 16px rgb(39,203,237,0.5);
+    background-color: #27cbed;
+    transition: box-shadow 0.3s;
+}
+
+#main a:hover {
+    box-shadow: 2px 2px 4px rgb(39,203,237,0.5);
+}

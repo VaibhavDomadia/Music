@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#subheader {
+    padding: 16px 32px;
+    font-size: 24px;
+}
+
+#subheader i {
+    color: #5f6368;
+}
+
+#subheader span:nth-child(2) {
+    color: #5f6368;
+}
+
+#subheader span:nth-child(3) {
+    color: #27cbed;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+    display: grid;
+    padding: 8px;
+    grid-template-columns: 1fr 1fr 1fr 10fr;
+    align-items: center;
+    background-color: white;
+    z-index: 3;
+    box-shadow: 0px 8px 8px rgba(0,0,0,0.15);
+}
+
+#nav a {
+    color: #5f6368;
+    padding: 8px 16px;
+    align-self: center;
+    justify-self: center;
+    margin: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+#nav a:hover:not(.active) {
+    background-color: rgba(0,0,0,0.15);
+}
+
+#nav a.active {
+    background-color: #27cbed;
+    color: white;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
