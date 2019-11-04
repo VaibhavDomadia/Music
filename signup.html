@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <i class="fas fa-music"></i>
+        <span>Any</span>
+        <span>TIME!</span>
+    </div>
+
+    <div id="main">
+        <form action="index.html" onsubmit="return validPassword()">
+
+            <p id="createAccountHeader">Create your Music Account</p>
+
+            <input type="text" placeholder="First Name: " required>
+            <input type="text" placeholder="Last Name: " required><br>
+
+            <input type="email" placeholder="Email ID" required><br>
+            <input type="password" id="passwordField" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                title="1 UpperCase, 1 LowerCase, 1 Digit, 1 Special Character and atleast 8 character"><br>
+            <input type="password" id="confirmField" placeholder="Confirm Password" required><br>
+
+            <button type="submit" id="submitbutton">Create Account</button>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+        function validPassword() {
+            let pfield = document.getElementById("passwordField").value;
+            let cfield = document.getElementById("confirmField").value;
+            if (pfield != cfield) {
+                alert("Password in both field does't match");
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

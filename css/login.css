@@ -1,0 +1,57 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+#header {
+    padding: 16px;
+    border-bottom: 2px solid #27cbed;
+    font-size: 24px;
+}
+
+i {
+    color: #5f6368;
+    margin-left: 16px;
+}
+
+#header span:nth-child(3) {
+    color: #27cbed;
+}
+
+#header span:nth-child(2) {
+    color: #5f6368;
+}
+
+#main {
+    padding: 32px;
+    box-shadow: 0px 0px 8px rgb(39,203,237,0.5);
+    margin: 32px;
+    border-radius: 16px;
+}
+
+#createAccountHeader {
+    color: #5f6368;
+    font-size: 24px;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #27cbed;
+    margin: 4px;
+}
+
+#submitbutton {
+    text-decoration: none;
+    padding: 8px;
+    margin: 16px;
+    color: #27cbed;
+    background-color: white;
+    border: 1px solid #27cbed;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.15);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

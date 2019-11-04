@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <i class="fas fa-music"></i>
+        <span>Any</span>
+        <span>TIME!</span>
+    </div>
+
+    <div id="main">
+        
+        <p id="createAccountHeader">Sign In</p>
+        
+        <form action="index.html">
+            <input type="email" placeholder="Email ID" required><br>
+            <input type="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required
+                title="1 UpperCase, 1 LowerCase, 1 Digit, 1 Special Character and atleast 8 character"><br>
+            <button type="submit" id="submitbutton">Sign In</button>
+            <a href="signup.html" id="submitbutton">Sign Up</a>
+        </form>
+
+        
+    </div>
+
+
+
+</body>
+
+</html>
